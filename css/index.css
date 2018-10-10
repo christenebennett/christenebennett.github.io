@@ -144,11 +144,26 @@ body {
 body h2 {
   font-size: 5rem;
 }
+@media (max-width: 500px) {
+  body h2 {
+    font-size: 3rem;
+  }
+}
 body h4 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  body h4 {
+    font-size: 2rem;
+  }
+}
 body p {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  body p {
+    font-size: 1.6rem;
+  }
 }
 body h1,
 body h2,
@@ -178,8 +193,19 @@ nav a {
   text-decoration: none;
   transition: all 0.3s;
 }
+@media (max-width: 500px) {
+  nav a {
+    margin: 20px 2%;
+  }
+}
 nav a:hover {
   color: #9CA353;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-around;
+    font-size: 20px;
+  }
 }
 header {
   background: url(../images/header-bg.jpg) no-repeat;
@@ -190,6 +216,11 @@ header {
 }
 header h1 {
   font-size: 8rem;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 6rem;
+  }
 }
 .header__text {
   max-width: 50%;
@@ -204,6 +235,11 @@ header h1 {
 .header__text p,
 .header__text h4 {
   padding: 20px 0;
+}
+@media (max-width: 800px) {
+  .header__text {
+    max-width: 100%;
+  }
 }
 button {
   max-width: 200px;
@@ -234,29 +270,82 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
 }
+@media (max-width: 800px) {
+  #about .about__desc {
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  #about .about__desc {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+  }
+}
 #about .about__desc h2 {
   text-align: left;
+}
+@media (max-width: 500px) {
+  #about .about__desc h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  #about .about__desc p {
+    padding-top: 20px;
+  }
 }
 #about .about__img {
   width: 50%;
   display: flex;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #about .about__img {
+    width: 100%;
+  }
+}
 #about .about__img img {
   max-width: 100%;
+}
+@media (max-width: 500px) {
+  #about {
+    flex-direction: column;
+  }
 }
 #experience {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  #experience {
+    flex-direction: column;
+  }
+}
 #experience .experience__skills,
 #experience .experience__history {
   width: 50%;
+}
+@media (max-width: 500px) {
+  #experience .experience__skills,
+  #experience .experience__history {
+    width: 100%;
+  }
 }
 #experience .experience__skills {
   text-align: right;
   padding: 10%;
   width: 50%;
+}
+@media (max-width: 800px) {
+  #experience .experience__skills {
+    padding: 10% 5%;
+  }
+}
+@media (max-width: 500px) {
+  #experience .experience__skills {
+    width: 100%;
+  }
 }
 #experience .experience__skills ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -265,10 +354,20 @@ button:hover {
   text-transform: none;
   letter-spacing: 0;
 }
+@media (max-width: 500px) {
+  #experience .experience__skills ul li {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  #experience .experience__skills h2 {
+    text-align: center;
+  }
+}
 #experience .experience__history {
   color: #323232;
   background: #9CA353;
-  padding: 10%;
+  padding: 5%;
 }
 #experience .history-box {
   background: rgba(0, 0, 0, 0.2);
@@ -301,6 +400,11 @@ button:hover {
 }
 #contact p {
   margin-top: 20px;
+}
+@media (max-width: 500px) {
+  #contact {
+    font-size: 100px;
+  }
 }
 footer {
   height: 100px;
